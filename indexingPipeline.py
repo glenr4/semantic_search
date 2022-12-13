@@ -4,16 +4,12 @@ import os
 import time
 import logging
 from fileUtils import setWorkingToCurrentFile
-from startElastic import launch_persistent_es
 
 setWorkingToCurrentFile()
 
 logging.basicConfig(
     format="%(levelname)s - %(name)s -  %(message)s", level=logging.WARNING)
 logging.getLogger("haystack").setLevel(logging.DEBUG)
-
-
-launch_persistent_es()
 
 
 # Get the host where Elasticsearch is running, default to localhost
