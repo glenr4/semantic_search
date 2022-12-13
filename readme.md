@@ -1,12 +1,13 @@
 # Semantic Search
+Note: this assumes you are running on Linux, if you are using Windows it may not work but you can always use: [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install)
 
 ## Initialisation
 - Download model: need to write a script
-
+- Start Elastic Search: `docker compose up --detach`
 
 ## Indexing Pipeline
-`python indexingPipeline.py`
+`python3 indexingPipeline.py`
 
 
 ## Search Pipeline
-`qanda.py`
+`python3 qanda.py`

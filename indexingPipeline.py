@@ -14,7 +14,6 @@ logging.getLogger("haystack").setLevel(logging.DEBUG)
 
 
 launch_persistent_es()
-time.sleep(30)
 
 
 # Get the host where Elasticsearch is running, default to localhost

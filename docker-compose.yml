@@ -1,0 +1,19 @@
+version: '3'
+services:
+  elasticsearch1:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.9.2
+    container_name: elasticsearch1
+    environment:
+      - "discovery.type=single-node"
+    volumes:
+      - esdata1:/usr/share/elasticsearch/data:rw
+    ports:
+      - 9200:9200
+    networks:
+      - semantic_search
+    restart: unless-stopped
+volumes:
+  esdata1:
+    driver: local
+networks:
+  semantic_search:
