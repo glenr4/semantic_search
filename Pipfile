@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 farm-haystack = "*"
 ffmpeg = "*"
+fastapi = {extras = ["all"], version = "*"}
 
 [dev-packages]
 

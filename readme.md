@@ -8,6 +8,9 @@ Note: this assumes you are running on Linux, if you are using Windows it may not
 ## Indexing Pipeline
 `python3 indexingPipeline.py`
 
+## REST API
+`cd api && `
+`uvicorn api:app --reload`
 
 ## Search Pipeline
 `python3 qanda.py`
