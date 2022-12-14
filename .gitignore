@@ -2,3 +2,5 @@
 data/
 __pycache__/
 roberta*
+venv
+node_modules
