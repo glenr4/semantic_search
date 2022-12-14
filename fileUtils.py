@@ -1,13 +1,12 @@
 import os
 
+# Useful for changing working directory for VSCode debugger
+
 
 def setWorkingToCurrentFile():
-    print(os.getcwd())
-    print(__file__)
     filePath = os.path.dirname(__file__)
-    print(filePath)
 
     if filePath != '':
-        print("Changing working directory")
         os.chdir(filePath)
-        print(os.getcwd())
+
+    print(f'Working directory is: {os.getcwd()}')

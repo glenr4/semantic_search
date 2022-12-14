@@ -9,8 +9,7 @@ Note: this assumes you are running on Linux, if you are using Windows it may not
 `python3 indexingPipeline.py`
 
 ## REST API
-`cd api && `
-`uvicorn api:app --reload`
+`uvicorn qandaApi:app --reload`  // qandaApi.py
 
 ## Search Pipeline
 `python3 qanda.py`
