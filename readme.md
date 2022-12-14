@@ -11,5 +11,5 @@ Note: this assumes you are running on Linux, if you are using Windows it may not
 ## REST API
 `uvicorn qandaApi:app --reload`  // qandaApi.py
 
-## Search Pipeline
-`python3 qanda.py`
+Swagger: http://127.0.0.1:8000/docs
+ReDoc: http://127.0.0.1:8000/redoc
